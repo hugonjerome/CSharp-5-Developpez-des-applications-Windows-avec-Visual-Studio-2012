@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace SelfMailer.Forms
+{
+    public partial class MailServerSettings : Form
+    {
+        public MailServerSettings()
+        {
+            InitializeComponent();
+        }
+
+        private void Valid_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SelfMailer" Class="SelfMailerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\v11.0;Initial Catalog=SelfMailer;Integrated Security=True" SettingsObjectName="SelfMailer.Properties.Settings" SettingsPropertyName="SelfMailerConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.MailServers" Member="MailServers">
+    <Type Name="MailServers">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Host" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Password_Value" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Password_AllowSave" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="MailServers_MailServerSender" Member="MailServerSender" ThisKey="ID" OtherKey="MailServer_ID" Type="MailServerSender" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MailServerSender" Member="MailServerSender">
+    <Type Name="MailServerSender">
+      <Column Name="MailServer_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Sender_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="MailServers_MailServerSender" Member="MailServers" ThisKey="MailServer_ID" OtherKey="ID" Type="MailServers" IsForeignKey="true" />
+      <Association Name="Senders_MailServerSender" Member="Senders" ThisKey="Sender_ID" OtherKey="ID" Type="Senders" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Senders" Member="Senders">
+    <Type Name="Senders">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="Senders_MailServerSender" Member="MailServerSender" ThisKey="ID" OtherKey="Sender_ID" Type="MailServerSender" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetLinkedMailServersSenders" Method="GetLinkedMailServersSenders">
+    <Parameter Name="MailServerID" Parameter="mailServerID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetLinkedMailServersSendersResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Host" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Password_Value" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Password_AllowSave" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ID1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

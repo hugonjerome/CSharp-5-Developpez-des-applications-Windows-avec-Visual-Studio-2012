@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfMailer", "SelfMailer\SelfMailer.csproj", "{A28B9278-0798-41EF-AD82-0934606572F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading", "OperatorOverloading\OperatorOverloading.csproj", "{27B1E9C1-9FBE-42C7-ADD2-9F9B837977DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27B1E9C1-9FBE-42C7-ADD2-9F9B837977DF}.Debug|x86.ActiveCfg = Debug|x86
+		{27B1E9C1-9FBE-42C7-ADD2-9F9B837977DF}.Debug|x86.Build.0 = Debug|x86
+		{27B1E9C1-9FBE-42C7-ADD2-9F9B837977DF}.Release|x86.ActiveCfg = Release|x86
+		{27B1E9C1-9FBE-42C7-ADD2-9F9B837977DF}.Release|x86.Build.0 = Release|x86
+		{A28B9278-0798-41EF-AD82-0934606572F8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A28B9278-0798-41EF-AD82-0934606572F8}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

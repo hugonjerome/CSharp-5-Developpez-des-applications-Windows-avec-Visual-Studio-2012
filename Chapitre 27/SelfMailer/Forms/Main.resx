@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="enregistrerSousToolStripMenuItem.Text" xml:space="preserve">
+    <value>En&amp;registrer sous ...</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>552, 165</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="nouveauProjetToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+N</value>
+  </data>
+  <data name="ofdProject.Filter" xml:space="preserve">
+    <value>Self Mailer Project (*.smpx)|*.smpx</value>
+  </data>
+  <data name="nouveauProjetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 22</value>
+  </data>
+  <data name="&gt;&gt;projetToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="enregistrerSousToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Maj+S</value>
+  </data>
+  <data name="&gt;&gt;ParametersMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="projetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="MailServerMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="MailServerMenu.Text" xml:space="preserve">
+    <value>Serveur &amp;Mail</value>
+  </data>
+  <data name="donnéeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="&gt;&gt;MailServerMenu.Name" xml:space="preserve">
+    <value>MailServerMenu</value>
+  </data>
+  <data name="MainMenu.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="supprimerToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Supprimer</value>
+  </data>
+  <data name="&gt;&gt;enregistrerSousToolStripMenuItem.Name" xml:space="preserve">
+    <value>enregistrerSousToolStripMenuItem</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;ofdSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chargerToolStripMenuItem1.Name" xml:space="preserve">
+    <value>chargerToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;ParametersMenu.Name" xml:space="preserve">
+    <value>ParametersMenu</value>
+  </data>
+  <data name="&gt;&gt;enregistrerSousToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chargerToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="donnéeToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Données</value>
+  </data>
+  <data name="&gt;&gt;nouveauProjetToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sauverToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+S</value>
+  </data>
+  <data name="&gt;&gt;ofdProject.Name" xml:space="preserve">
+    <value>ofdProject</value>
+  </data>
+  <data name="&gt;&gt;ofdProject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;supprimerToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sauverToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Enregistrer</value>
+  </data>
+  <data name="MailServerMenu.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+M</value>
+  </data>
+  <data name="MainTab.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ParametersMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 20</value>
+  </data>
+  <data name="projetToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+P</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MainMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="MainTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="&gt;&gt;nouveauProjetToolStripMenuItem.Name" xml:space="preserve">
+    <value>nouveauProjetToolStripMenuItem</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 20</value>
+  </data>
+  <data name="&gt;&gt;chargerToolStripMenuItem.Name" xml:space="preserve">
+    <value>chargerToolStripMenuItem</value>
+  </data>
+  <data name="nouveauProjetToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Nouveau</value>
+  </data>
+  <data name="fichierToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Fichier</value>
+  </data>
+  <data name="&gt;&gt;aProposToolStripMenuItem.Name" xml:space="preserve">
+    <value>aProposToolStripMenuItem</value>
+  </data>
+  <data name="chargerToolStripMenuItem1.Text" xml:space="preserve">
+    <value>&amp;Charger ...</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>&amp;?</value>
+  </data>
+  <data name="&gt;&gt;sauverToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
+    <value>toolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.Name" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="MainTab.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;prévisualiserToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="envoyerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Envoyer</value>
+  </data>
+  <data name="&gt;&gt;ofdSource.Name" xml:space="preserve">
+    <value>ofdSource</value>
+  </data>
+  <data name="&gt;&gt;envoyerToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aProposToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MainTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 141</value>
+  </data>
+  <data name="chargerToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 22</value>
+  </data>
+  <data name="supprimerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 22</value>
+  </data>
+  <data name="ParametersMenu.Text" xml:space="preserve">
+    <value>&amp;Paramètres</value>
+  </data>
+  <data name="fichierToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="envoyerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="aProposToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;À propos de ...</value>
+  </data>
+  <data name="ofdProject.Title" xml:space="preserve">
+    <value>Charger un projet</value>
+  </data>
+  <data name="&gt;&gt;donnéeToolStripMenuItem.Name" xml:space="preserve">
+    <value>donnéeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;MainTab.Name" xml:space="preserve">
+    <value>MainTab</value>
+  </data>
+  <data name="chargerToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Charger ...</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chargerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 22</value>
+  </data>
+  <data name="aProposToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 22</value>
+  </data>
+  <data name="MainMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 24</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="&gt;&gt;envoyerToolStripMenuItem.Name" xml:space="preserve">
+    <value>envoyerToolStripMenuItem</value>
+  </data>
+  <data name="prévisualiserToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 22</value>
+  </data>
+  <data name="&gt;&gt;sauverToolStripMenuItem.Name" xml:space="preserve">
+    <value>sauverToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;supprimerToolStripMenuItem.Name" xml:space="preserve">
+    <value>supprimerToolStripMenuItem</value>
+  </data>
+  <data name="MainMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ofdSource.Title" xml:space="preserve">
+    <value>Load source file</value>
+  </data>
+  <data name="MailServerMenu.ShortcutKeyDisplayString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;donnéeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fichierToolStripMenuItem.Name" xml:space="preserve">
+    <value>fichierToolStripMenuItem</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="&gt;&gt;projetToolStripMenuItem.Name" xml:space="preserve">
+    <value>projetToolStripMenuItem</value>
+  </data>
+  <data name="chargerToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+C</value>
+  </data>
+  <data name="&gt;&gt;chargerToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sauverToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 22</value>
+  </data>
+  <data name="&gt;&gt;MainTab.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="projetToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Projet</value>
+  </data>
+  <data name="&gt;&gt;fichierToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;prévisualiserToolStripMenuItem.Name" xml:space="preserve">
+    <value>prévisualiserToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;MailServerMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="prévisualiserToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Prévisualiser</value>
+  </data>
+  <data name="enregistrerSousToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 22</value>
+  </data>
+  <metadata name="ofdProject.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>127, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en-US</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ofdSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>235, 17</value>
+  </metadata>
+  <metadata name="MainMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>

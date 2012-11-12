@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SelfMailer.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="SelfMailerStoreContainer">
+    <EntitySet Name="MailServers" EntityType="SelfMailer.Store.MailServers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Senders" EntityType="SelfMailer.Store.Senders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MailServerSender" EntityType="SelfMailer.Store.MailServerSender" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_MailServerSender_MailServer" Association="SelfMailer.Store.FK_MailServerSender_MailServer">
+      <End Role="MailServer" EntitySet="MailServers" />
+      <End Role="MailServerSender" EntitySet="MailServerSender" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MailServerSender_Sender" Association="SelfMailer.Store.FK_MailServerSender_Sender">
+      <End Role="Sender" EntitySet="Senders" />
+      <End Role="MailServerSender" EntitySet="MailServerSender" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="MailServers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Host" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Username" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password_Value" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password_AllowSave" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Senders">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MailServerSender">
+    <Key>
+      <PropertyRef Name="MailServer_ID" />
+      <PropertyRef Name="Sender_ID" />
+    </Key>
+    <Property Name="MailServer_ID" Type="int" Nullable="false" />
+    <Property Name="Sender_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_MailServerSender_MailServer">
+    <End Role="MailServer" Type="SelfMailer.Store.MailServers" Multiplicity="1" />
+    <End Role="MailServerSender" Type="SelfMailer.Store.MailServerSender" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MailServer">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MailServerSender">
+        <PropertyRef Name="MailServer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MailServerSender_Sender">
+    <End Role="MailServerSender" Type="SelfMailer.Store.MailServerSender" Multiplicity="*" />
+    <End Role="Sender" Type="SelfMailer.Store.Senders" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Sender">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MailServerSender">
+        <PropertyRef Name="Sender_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="SelfMailer" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="SelfMailerContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="MailServers" EntityType="SelfMailer.MailServer" />
+          <EntitySet Name="Senders" EntityType="SelfMailer.Sender" />
+          <AssociationSet Name="MailServerSender" Association="SelfMailer.MailServerSender">
+            <End Role="MailServer" EntitySet="MailServers" />
+            <End Role="Sender" EntitySet="Senders" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="MailServer">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Host" Nullable="false" />
+          <Property Type="String" Name="Username" Nullable="false" />
+          <Property Name="Password" Type="SelfMailer.Password" Nullable="false" />
+          <NavigationProperty Name="Sender" Relationship="SelfMailer.MailServerSender" FromRole="MailServer" ToRole="Sender" />
+        </EntityType>
+        <ComplexType Name="Password" >
+          <Property Type="String" Name="Value" Nullable="false" />
+          <Property Type="Boolean" Name="AllowSave" Nullable="false" />
+        </ComplexType>
+        <EntityType Name="Sender">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" />
+          <Property Type="String" Name="Email" Nullable="false" />
+          <NavigationProperty Name="MailServer" Relationship="SelfMailer.MailServerSender" FromRole="Sender" ToRole="MailServer" />
+        </EntityType>
+        <Association Name="MailServerSender">
+          <End Type="SelfMailer.MailServer" Role="MailServer" Multiplicity="*" />
+          <End Type="SelfMailer.Sender" Role="Sender" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SelfMailerStoreContainer" CdmEntityContainer="SelfMailerContainer">
+    <EntitySetMapping Name="MailServers">
+      <EntityTypeMapping TypeName="IsTypeOf(SelfMailer.MailServer)">
+        <MappingFragment StoreEntitySet="MailServers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Host" ColumnName="Host" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ComplexProperty Name="Password" TypeName="SelfMailer.Password">
+            <ScalarProperty Name="Value" ColumnName="Password_Value" />
+            <ScalarProperty Name="AllowSave" ColumnName="Password_AllowSave" />
+          </ComplexProperty>
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Senders">
+      <EntityTypeMapping TypeName="IsTypeOf(SelfMailer.Sender)">
+        <MappingFragment StoreEntitySet="Senders">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MailServerSender" TypeName="SelfMailer.MailServerSender" StoreEntitySet="MailServerSender">
+      <EndProperty Name="MailServer">
+        <ScalarProperty Name="ID" ColumnName="MailServer_ID" />
+      </EndProperty>
+      <EndProperty Name="Sender">
+        <ScalarProperty Name="ID" ColumnName="Sender_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

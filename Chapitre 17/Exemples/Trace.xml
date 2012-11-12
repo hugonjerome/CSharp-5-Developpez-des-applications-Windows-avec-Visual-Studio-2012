@@ -1,0 +1,60 @@
+<E2ETraceEvent xmlns="http://schemas.microsoft.com/2004/06/E2ETraceEvent">
+  <System xmlns="http://schemas.microsoft.com/2004/06/windows/eventlog/system">
+    <EventID>0</EventID>
+    <Type>3</Type>
+    <SubType Name="Information">0</SubType>
+    <Level>8</Level>
+    <TimeCreated SystemTime="2012-06-10T17:28:10.8627812Z" />
+    <Source Name="SelfMailer.vshost.exe" />
+    <Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+    <Execution ProcessName="SelfMailer.vshost" ProcessID="3264" ThreadID="10" />
+    <Channel/>
+    <Computer>Windows8</Computer>
+  </System>
+  <ApplicationData>Début de l&apos;application.</ApplicationData>
+</E2ETraceEvent>
+<E2ETraceEvent xmlns="http://schemas.microsoft.com/2004/06/E2ETraceEvent">
+  <System xmlns="http://schemas.microsoft.com/2004/06/windows/eventlog/system">
+    <EventID>0</EventID>
+    <Type>3</Type>
+    <SubType Name="Information">0</SubType>
+    <Level>8</Level>
+    <TimeCreated SystemTime="2012-06-10T17:59:08.3492187Z" />
+    <Source Name="SelfMailer.vshost.exe" />
+    <Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+    <Execution ProcessName="SelfMailer.vshost" ProcessID="3964" ThreadID="9" />
+    <Channel/>
+    <Computer>Windows8</Computer>
+  </System>
+  <ApplicationData>Message d&apos;information.</ApplicationData>
+</E2ETraceEvent>
+<E2ETraceEvent xmlns="http://schemas.microsoft.com/2004/06/E2ETraceEvent">
+  <System xmlns="http://schemas.microsoft.com/2004/06/windows/eventlog/system">
+    <EventID>0</EventID>
+    <Type>3</Type>
+    <SubType Name="Warning">0</SubType>
+    <Level>4</Level>
+    <TimeCreated SystemTime="2012-06-10T17:59:08.5660155Z" />
+    <Source Name="SelfMailer.vshost.exe" />
+    <Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+    <Execution ProcessName="SelfMailer.vshost" ProcessID="3964" ThreadID="9" />
+    <Channel/>
+    <Computer>Windows8</Computer>
+  </System>
+  <ApplicationData>Message d&apos;avertissement.</ApplicationData>
+</E2ETraceEvent>
+<E2ETraceEvent xmlns="http://schemas.microsoft.com/2004/06/E2ETraceEvent">
+  <System xmlns="http://schemas.microsoft.com/2004/06/windows/eventlog/system">
+    <EventID>0</EventID>
+    <Type>3</Type>
+    <SubType Name="Error">0</SubType>
+    <Level>2</Level>
+    <TimeCreated SystemTime="2012-06-10T17:59:08.6978515Z" />
+    <Source Name="SelfMailer.vshost.exe" />
+    <Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+    <Execution ProcessName="SelfMailer.vshost" ProcessID="3964" ThreadID="9" />
+    <Channel/>
+    <Computer>Windows8</Computer>
+  </System>
+  <ApplicationData>Message d&apos;erreur.</ApplicationData>
+</E2ETraceEvent>

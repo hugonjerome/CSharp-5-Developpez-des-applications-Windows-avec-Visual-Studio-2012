@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SelMailer>
+  <MailServer ID="1">
+    <Host>mail.mondomaine.com</Host>
+    <Username>monUtilisateur</Username>
+    <Password>monMotDePasse</Password>
+  </MailServer>
+  <MailServer ID="2">
+    <Host>mail.mondomaine2.com</Host>
+    <Username>monUtilisateur2</Username>
+    <Password>monMotDePasse2</Password>
+  </MailServer>
+  <Sender ID="1">
+    <Name>mon nom</Name>
+    <Email>email@mondomaine.com</Email>
+  </Sender>
+  <MailServerSender MailServerID="1" SenderID="1" />
+  <MailServerSender MailServerID="2" SenderID="1" />
+</SelMailer>

@@ -1,0 +1,4 @@
+SelfMailer.vshost.exe Information: 0 : Début de l'application.
+SelfMailer.vshost.exe Information: 0 : Message d'information.
+SelfMailer.vshost.exe Warning: 0 : Message d'avertissement.
+SelfMailer.vshost.exe Error: 0 : Message d'erreur.

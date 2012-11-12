@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="IntroductionW8.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IntroductionW8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Name="MonTexte"
+           Visibility="Collapsed"
+           Margin="339,239,0,0"
+           FontSize="32"
+           FontWeight="Bold">
+            Bonjour !
+        </TextBlock>
+        <Button Name="MonBouton"
+        Margin="339,239,0,0"
+        Width="150"
+        Height="50"
+        Click="MonBouton_Click">
+            Cliquer ici !
+        </Button>
+    </Grid>
+</Page>
